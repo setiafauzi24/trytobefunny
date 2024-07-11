@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Invitation Masalma</title>
+            <link rel="preload" href="https://media.giphy.com/media/3oz8xygX09cOcTmY9C/giphy.gif" as="image" type="image/gif">
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Salmaa, jalan yuk??</h1>
+                
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/JIOTHacwDM0Q0KiUGn/giphy.gif" alt="Cute animated illustration">
+                <!-- <iframe src="https://giphy.com/embed/efKfDypx70EQHfSauS" width="372" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/strike-a-pose-power-hero-efKfDypx70EQHfSauS">via GIPHY</a></p> -->
+            </div>
+
+            <audio autoplay loop>
+                <source src="audio/David Neyrolles - 50 Boulevard Voltaire.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">LESGOW</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">MAGER!!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
+
+<!-- 
+
+<iframe src="https://giphy.com/embed/ZCSPaG9pPpSJEBiOUF" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/transparent-ZCSPaG9pPpSJEBiOUF">via GIPHY</a></p> -->
